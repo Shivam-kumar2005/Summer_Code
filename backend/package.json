@@ -1,0 +1,23 @@
+{
+  "//1": "This is the 'Identity Card' for your Backend (Node.js) server.",
+  "name": "server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "//2": "The 'dev' script uses '--watch' to automatically restart the server whenever you save a file.",
+  "scripts": {
+    "dev": "node --watch index.js",
+    "start": "node index.js"
+  },
+  "//3": "The 'ingredients' (libraries) your server needs to function.",
+  "dependencies": {
+    "@elevenlabs/elevenlabs-js": "^2.45.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "google-auth-library": "^10.6.2",
+    "mongoose": "^8.3.4",
+    "multer": "^2.1.1",
+    "node-fetch": "^3.3.2"
+  }
+}

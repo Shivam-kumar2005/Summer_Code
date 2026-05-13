@@ -1,0 +1,20 @@
+{
+  "//1": "This is the 'Grandparent' package.json for your entire project (Monorepo).",
+  "//2": "It manages both the 'frontend' and 'backend' folders at once.",
+  "name": "summer-code-monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "frontend",
+    "backend"
+  ],
+  "//3": "The 'scripts' section allows you to run commands for the whole project from here.",
+  "scripts": {
+    "build": "npm run build -w frontend",
+    "frontend": "npm run dev -w frontend",
+    "backend": "npm run dev -w backend",
+    "install:all": "npm install"
+  },
+  "//4": "To run the frontend from this folder, type: npm run frontend",
+  "//5": "To run the backend from this folder, type: npm run backend"
+}
